@@ -9,6 +9,8 @@ import Login from "./components/Auth/Login";
 import Contact from "./components/Contact";
 import Forum from "./components/Content/Forum";
 import Footer from "./components/partials/Footer";
+import Dashboard from "./components/Dashboard";
+import CreatePost from "./components/CreatePost";
 
 function App() {
   return (
@@ -26,6 +28,8 @@ function App() {
           <Register /></>} />
         <Route path="/contact" element={ <><Navbar contact="contact" /><Contact /><Footer /></> } />
         <Route path="/forum/:forumId" element={ <><Navbar contact="" /><Forum /><Footer /></> } />
+        <Route path="/user/:userId" element={ <><Navbar contact="" /><Dashboard /><Footer /></> } />
+        <Route path="/create-post" element={ <><Navbar contact="" /><CreatePost /></> } />
       </Routes>
     </>
   );
