@@ -3,10 +3,10 @@ import coronaImg from "../../assets/corona.jpg"
 
 const Forum = () => {
   return (
-    <div className="w-full min-h-[91.2vh] pt-16 px-8 dark:bg-gray-900">
+    <div className="w-full min-h-[91.2vh] pt-8 lg:pt-16 p-0 lg:px-8 dark:bg-gray-900">
       <div className="flex flex-wrap lg:flex-nowrap">
         {/* blog section */ }
-        <div className="dark:bg-gray-800 m-3 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12">
+        <div className="dark:bg-gray-800 m-0 w-screen lg:m-3 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12">
           {/* profile */ }
           <div className="flex items-center space-x-4 rtl:space-x-reverse">
             <div className="flex-shrink-0">
@@ -24,7 +24,13 @@ const Forum = () => {
                 3k followers
               </p>
             </div>
-            <button type="button" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Follow</button>
+            <div className="w-full lg:w-4/12 px-4 lg:order-3 text-right lg:self-center">
+              <div className="px-3 mt-6 mb-6 sm:mt-0">
+                <button className="bg-pink-500 active:bg-pink-600 uppercase text-white font-bold hover:shadow-md shadow text-xs px-4 py-2 rounded outline-none focus:outline-none sm:mr-2 mb-1 ease-linear transition-all duration-150" type="button">
+                  Follow
+                </button>
+              </div>
+            </div>
           </div>
 
           <img src={ coronaImg } className="rounded-sm w-3/5 my-6" alt="post image" />
@@ -275,7 +281,7 @@ const Forum = () => {
         </div>
 
         {/* side section */ }
-        <div className="dark:bg-gray-800 m-3 border min-w-[24rem] h-fit border-gray-200 rounded-t-sm dark:border-gray-700 rounded-lg pt-8">
+        <div className="dark:bg-gray-800 m-0 lg:m-3 border w-screen lg:w-1/3 lg:min-w-[24rem] h-fit border-gray-200 rounded-t-sm dark:border-gray-700 rounded-lg pt-8">
           <h2 className="text-gray-900 px-8 dark:text-white mt-3 text-xl font-extrabold mb-6">
             Related Posts
           </h2>
